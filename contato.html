@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MOMENTVM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="SITE-ESPORTE.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="nome">MOMENTVM</div>
+      <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre-nós</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="contatos">
+        <h2 class="titulo-contatos">Contatos</h2>
+        <div class="separador">
+          <p class="titulo-contatos">Telefone</p>
+          <p class="informacao-do-contato">(11) 9101-5278</p>
+        </div>
+        <div class="separador">
+          <p class="titulo-contatos">E-mail</p>
+          <p class="informacao-do-contato">contato@momentvm.com</p>
+        </div>
+        <div class="separador">
+          <p class="titulo-contatos">Endereço</p>
+          <p class="informacao-do-contato">Avenida Paulista, 1000</p>
+          <p class="informacao-do-contato">São Paulo - SP</p>
+          <p class="informacao-do-contato">CEP: 01310-100</p>
+        </div>
+      </div>
+      <div class="container-formulario">
+        <h1 class="titulo-formulario">Cadastre-se</h1>
+        <form method="post" action="bancodedados.py" class="formulario">
+          <label class="titulo-campos">Nome Completo:</label>
+          <input
+            type="text"
+            name="nome"
+            placeholder="Seu nome"
+            required
+            class="campo"
+          />
+          <label class="titulo-campos">Endereço:</label>
+          <input
+            type="text"
+            name="endereco"
+            placeholder="Seu endereço"
+            class="campo"
+          />
+          <label class="titulo-campos">Data de Nascimento:</label>
+          <input type="date" name="data_nasc" class="campo" />
+          <label class="titulo-campos">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="seu@email.com"
+            required
+            class="campo"
+          />
+          <label class="titulo-campos">Senha:</label>
+          <input
+            type="password"
+            name="senha"
+            placeholder="12 dígitos"
+            maxlength="12"
+            required
+            class="campo"
+          />
+          <div class="grupo-opcoes">
+            <p class="titulo-opcoes">Qual seu gênero:</p>
+            <label class="opcao"
+              ><input type="radio" name="sexo" checked /> Feminino</label
+            >
+            <label class="opcao"
+              ><input type="radio" name="sexo" /> Masculino</label
+            >
+            <label class="opcao"
+              ><input type="radio" name="sexo" /> Outros</label
+            >
+          </div>
+
+          <div class="grupo-opcoes">
+            <p class="titulo-opcoes">
+              Quais esportes você gostaria de receber atualizações:
+            </p>
+            <label class="opcao"
+              ><input type="checkbox" name="esporte" /> Futebol</label
+            >
+            <label class="opcao"
+              ><input type="checkbox" name="esporte" /> Basquete</label
+            >
+            <label class="opcao"
+              ><input type="checkbox" name="esporte" /> Vôlei</label
+            >
+            <label class="opcao"
+              ><input type="checkbox" name="esporte" /> Tênis</label
+            >
+            <label class="opcao"
+              ><input type="checkbox" name="esporte" /> Futebol Americano</label
+            >
+            <label class="opcao"
+              ><input type="checkbox" name="esporte" /> Automobilismo</label
+            >
+            <label class="opcao"
+              ><input type="checkbox" name="esporte" /> E-Sports</label
+            >
+            <label class="opcao"
+              ><input type="checkbox" name="esporte" /> Outros</label
+            >
+          </div>
+          <label class="titulo-campos">Comentário:</label>
+          <textarea
+            name="comentario"
+            rows="4"
+            class="campo campo-texto"
+          ></textarea>
+          <div class="container-botoes">
+            <button type="submit" class="botao botao-enviar">Enviar</button>
+            <button type="reset" class="botao botao-limpar">Limpar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="rodape">
+      <div class="rodape-container">
+        <div class="nome-rodape">MOMENTVM</div>
+        <div class="links-rodape">
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre-nós</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <div class="copyright">
+          © 2025 MOMENTVM. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

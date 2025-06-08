@@ -1,0 +1,439 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  font-family: Helvetica, sans-serif;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #121212;
+}
+
+.nome {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #32e013;
+  font-weight: 300;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #32e013;
+}
+
+.capa {
+  width: 100%;
+  height: 500px;
+  background-image: url("capa4.jpg");
+  background-size: cover;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.texto-da-capa {
+  position: absolute;
+  left: 40px;
+  bottom: 10px;
+  color: #e0e0e0;
+}
+
+.texto-da-capa h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  margin: 0;
+}
+
+.texto-direita,
+.texto-esquerda {
+  display: grid;
+  gap: 5%;
+  padding: 60px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.texto-direita {
+  grid-template-columns: 40% 55%;
+}
+
+.texto-esquerda {
+  grid-template-columns: 55% 40%;
+}
+
+.imagem-esquerda,
+.imagem-direita {
+  width: 100%;
+  max-height: 600px;
+  align-self: center;
+  border-radius: 5%;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+.texto h2 {
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #32e013;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.texto p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.estatisticas-container {
+  margin: 25px 0;
+  color: #32e013;
+  font-family: "Montserrat", sans-serif;
+}
+
+.titulo-das-estatisticas {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.lista-das-estatisticas {
+  margin: 15px 0;
+  padding-left: 25px;
+  list-style-type: disc;
+  font-size: 16px;
+}
+
+.lista-das-estatisticas li {
+  margin-bottom: 8px;
+}
+
+.rodape {
+  background-color: #121212;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.rodape-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nome-rodape {
+  font-size: 24px;
+  color: #32e013;
+  font-weight: 300;
+}
+
+.links-rodape {
+  display: flex;
+  gap: 30px;
+}
+
+.links-rodape a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.links-rodape a:hover {
+  color: #32e013;
+}
+
+.copyright {
+  color: #e0e0e0;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Sobre-nos */
+.conteudo-sobre-nos {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-sobre-nos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 40px;
+  align-items: center;
+}
+
+.imagem-sobre-nos {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.texto-sobre-nos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-sobre-nos h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #32e013;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.texto-sobre-nos p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto;
+  gap: 30px;
+  padding: 0 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contatos {
+  width: 300px;
+  background: #121212;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.titulo-contatos {
+  color: #32e013;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.separador {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.titulo-do-contato {
+  color: #32e013;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.informacao-do-contato {
+  color: #e0e0e0;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 5px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-formulario {
+  flex: 1;
+  background: #121212;
+  padding: 25px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.titulo-formulario {
+  color: #32e013;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.titulo-campos {
+  display: block;
+  margin-bottom: 8px;
+  color: #32e013;
+  font-family: "Montserrat", sans-serif;
+}
+
+.campo {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #1e1e1e;
+  border: 1px solid #e0e0e0;
+  color: #e0e0e0;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.campo-texto {
+  min-height: 100px;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.grupo-opcoes {
+  margin: 20px 0;
+  padding: 15px;
+  background: #1e1e1e;
+  border-radius: 4px;
+}
+
+.titulo-opcoes {
+  margin-top: 0;
+  color: #32e013;
+  font-family: "Montserrat", sans-serif;
+}
+
+.opcao {
+  display: block;
+  margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-botoes {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.botao {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.botao-enviar {
+  background: #32e013;
+  color: #121212;
+}
+
+.botao-limpar {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .texto-da-capa {
+    left: 20px;
+    bottom: 20px;
+    text-align: left;
+  }
+
+  .texto-da-capa h1 {
+    font-size: 28px;
+  }
+
+  .texto-direita,
+  .texto-esquerda {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+
+  .texto {
+    padding: 0;
+  }
+
+  .texto h2,
+  .texto-sobre-nos h2,
+  .titulo-formulario {
+    font-size: 22px;
+  }
+
+  .texto p,
+  .texto-sobre-nos p,
+  .informacao-do-contato,
+  .lista-estatisticas,
+  .menu a {
+    font-size: 16px;
+  }
+
+  .imagem-esquerda,
+  .imagem-direita {
+    max-width: 100%;
+    max-height: 400px;
+  }
+
+  .container-sobre-nos {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contatos,
+  .container-formulario {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .campo-texto {
+    min-height: 80px;
+  }
+
+  .container-botoes {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .botao {
+    width: 100%;
+  }
+
+  .rodape-container {
+    padding: 0 20px;
+  }
+
+  .links-rodape {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
