@@ -1,0 +1,165 @@
+.texto-da-capa h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  margin: 0;
+}
+
+.destaque-principal {
+  display: grid;
+  grid-template-columns: 55% 40%;
+  gap: 5%;
+  padding: 60px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.imagem-destaque {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 5%;
+}
+
+.destaque-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #121212;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.titulo-destaque {
+  font-family: "Montserrat", sans-serif;
+  color: #32e013;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.subtitulo-destaque {
+  font-family: "Montserrat", sans-serif;
+  color: #e0e0e0;
+  font-size: 28px;
+  margin: 0 0 20px 0;
+}
+
+.resumo-destaque {
+  font-size: 18px;
+  color: #b0b0b0;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.info-destaque {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-destaque {
+  color: #777;
+  font-size: 16px;
+}
+
+.link-destaque {
+  color: #32e013;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.link-destaque:hover {
+  color: #e0e0e0;
+}
+
+.lista-artigos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px 60px 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.artigo {
+  background-color: #121212;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.titulo {
+  font-family: "Montserrat", sans-serif;
+  color: #32e013;
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.subtitulo {
+  font-family: "Montserrat", sans-serif;
+  color: #e0e0e0;
+  font-size: 20px;
+  margin: 0 0 15px 0;
+}
+
+.resumo-artigo {
+  font-size: 16px;
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.info-artigo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-artigo {
+  color: #777;
+  font-size: 14px;
+}
+
+.link-artigo {
+  color: #32e013;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.link-artigo:hover {
+  color: #e0e0e0;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .destaque-principal {
+    grid-template-columns: 100%;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .imagem-destaque {
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 20px;
+  }
+
+  .lista-noticias {
+    grid-template-columns: 100%;
+    padding: 0 20px 40px 20px;
+  }
+
+  .texto-da-capa h1 {
+    font-size: 28px;
+  }
+
+  .titulo-destaque {
+    font-size: 24px;
+  }
+
+  .resumo-destaque {
+    font-size: 16px;
+  }
+}

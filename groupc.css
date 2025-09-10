@@ -1,0 +1,191 @@
+/* Estilos gerais */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #121212;
+}
+
+.nome {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #32e013;
+  font-weight: 300;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #32e013;
+}
+
+/* Capa */
+.capa {
+  width: 95%;
+  height: 500px;
+  background-image: url("Group\ C\ .png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 auto 40px;
+}
+
+.texto-da-capa {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  color: #e0e0e0;
+  max-width: 80%;
+  text-align: justify;
+}
+
+.texto-da-capa h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Conteúdo */
+.conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px 40px;
+}
+
+.conteudo h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #32e013;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.conteudo p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Imagens no texto */
+.imagem-texto {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 30px auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #121212;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.rodape-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nome-rodape {
+  font-size: 24px;
+  color: #32e013;
+  font-weight: 300;
+}
+
+.links-rodape {
+  display: flex;
+  gap: 30px;
+}
+
+.links-rodape a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.links-rodape a:hover {
+  color: #32e013;
+}
+
+.copyright {
+  color: #e0e0e0;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .menu {
+    gap: 15px;
+  }
+
+  .capa {
+    height: 300px;
+    width: 100%;
+  }
+
+  .texto-da-capa {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .texto-da-capa h1 {
+    font-size: 24px;
+  }
+
+  .conteudo {
+    padding: 0 20px 20px;
+  }
+
+  .conteudo h2 {
+    font-size: 20px;
+  }
+
+  .conteudo p {
+    font-size: 16px;
+  }
+
+  .imagem-texto {
+    margin: 20px auto;
+  }
+
+  .links-rodape {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
